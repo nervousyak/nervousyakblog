@@ -1,0 +1,28 @@
+# Logfile created on 2010-05-08 13:26:07 -0500Rendering home/index.html.erb
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-05-08 13:26:08) [GET]
+Rendering home/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+Rendering home/index.html.erb
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-05-08 13:26:22) [GET]
+Rendering home/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing BlogController#index (for 0.0.0.0 at 2010-05-08 16:13:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+
+
+Processing BlogController#index (for 0.0.0.0 at 2010-05-08 16:14:12) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/blog]
+Rendering home/index.html.erb
+Rendering home/index.html.erb
+Rendering home/index.html.erb
+Rendering home/index.html.erb
+Rendering home/index.html.erb
