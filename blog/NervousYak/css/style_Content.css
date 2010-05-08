@@ -1,0 +1,63 @@
+#Content{
+  
+}
+
+#Content_start{
+}
+
+#content_start h1{
+	color: #015581;
+	font-family: Times New Roman, serif;
+	font-size: 24px;
+}
+
+#content_start p{
+  color:#015581;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#content_start.blog{
+	border: solid 1px black;
+}
+
+#content_start .date{
+	
+	text-align: right;
+	vertical-align : middle
+}
+
+#content_start .day{
+		color: #015581;
+	font-size: 36;
+	font-family: Times New Roman, serif;
+}
+
+
+#content_start .month{
+	color: #111111;
+	font-size: 14;
+	text-align: left;
+	line-height:90%;
+	top:10px;
+}
+
+
+
+
+/*#header_start a:hover{
+	
+	color: #FF0000;
+	text-decoration: none;
+}
+
+#header_start .menuTitle {
+  
+  font-size:24px;
+  font-family:serif;
+}
+
+#header_start .subMenu{
+  font-size:12px;
+  font-family:Helvetica, Arial, sans-serif;
+}*/

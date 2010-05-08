@@ -1,0 +1,32 @@
+#header{
+  
+}
+
+#header_start{
+  height:344px;
+  background-image:url('../images/header.png');
+}
+
+
+
+#header_start a{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+#header_start a:hover{
+	
+	color: #FF0000;
+	text-decoration: none;
+}
+
+#header_start .menuTitle {
+  
+  font-size:24px;
+  font-family:serif;
+}
+
+#header_start .subMenu{
+  font-size:12px;
+  font-family:Helvetica, Arial, sans-serif;
+}
