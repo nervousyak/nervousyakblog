@@ -1,0 +1,58 @@
+<html lang="en>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Nervous Yak - Yaking about Coding, Web Design, and Technology</title>
+<%=stylesheet_link_tag "reset.css" %>
+<%=stylesheet_link_tag "style_header.css" %>
+<%=stylesheet_link_tag "style_content.css" %>
+<%=stylesheet_link_tag "text.css" %>
+<%=stylesheet_link_tag "960.css" %>
+</head>
+<body>
+<div id="header" class="container_16">
+
+<div id="header_start"  class="grid_14 prefix_1 suffix_1">
+
+  <div class="grid_2 prefix_8 alpha">
+    <a class="MenuItem"  href="Blog">
+      <span class="MenuTitle">Blog</span><br/>
+      <span class="SubMenu">News & Notes</span></a>
+  </div>
+  
+  <div class="grid_2">
+    <a class="MenuItem" href="About">
+      <span class="MenuTitle">About</span></br>
+      <span class="SubMenu">Bio & Colophon</span></a>
+  </div>
+
+  <div class="grid_2 omega">
+    <a class="MenuItem" href="Contact">
+      <span class="MenuTitle">Contact</span></br>
+      <span class="SubMenu">Get in Touch</span</a>
+  </div>
+
+</div>
+<div class="clear"></div>
+</div>
+
+<br/><br/><br/>
+
+<div id="Content" class="Container_16">
+  
+
+  <%= yield %>
+
+
+</div>
+
+
+<div class="clear"></div>
+
+
+<div id="footer" class="container_16">
+  </div>
+
+
+
+</body>
+</html>
