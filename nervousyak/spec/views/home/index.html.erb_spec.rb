@@ -1,10 +1,15 @@
 require 'spec_helper'
 
 describe "home/index.html.erb" do
-  it "has the title Nervous Yak - Yaking about Coding, Web Design, and Technology" do
+  before(:each) do
     render
-    response.should have_selector("title") do |title|
-      title.should contain("Nervous Yak - Yaking about Coding, Web Design, and Technology")
+  end
+  it "shows the coming soon header" do
+    response.should have_selector("h1") do |h1|
+      h1.should contain("Coming Soon")
     end
+  end
+  it "contains the description of the blog" do
+    response.should contain("Nervous Yak is a weblog about coding and web design")
   end
 end
