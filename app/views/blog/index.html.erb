@@ -9,7 +9,7 @@
 		</div>
       </div>
       <div class="text grid_6 omega">
-			<h2><%=article.title%></h2>
+			<h2><%=link_to article.title, entry_path(article.id)%></h2>
 			<em>By <%=article.author_name %></em>
 			<p><%=article.content%></p>
       </div>
