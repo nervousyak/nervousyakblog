@@ -1,0 +1,9 @@
+<div id="content_start" class="grid_16">
+	<div class="grid_10 prefix_1">
+		<h1><%=@article.title%></h1>
+		<em>By <%=@article.author_name %></em>
+		<br/>
+		<em>Published On <%= @article.created_at.to_s %></em>
+		<p><%=@article.content%></p>		
+	</div>
+</div>

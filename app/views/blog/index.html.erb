@@ -1,14 +1,18 @@
 <div id="content_start" class="grid_14 prefix_1">
-    
+    <% @articles.each do |article| %>
     <div id="blog" class="grid_8 alpha">
       <div class="date grid_2 alpha">
-
+			
         <div class="grid_1 day"></div>
-        <div class="month"><br/></div>
+        <div class="month">
+			<p><%= article.created_at.to_s %></p>
+		</div>
       </div>
       <div class="text grid_6 omega">
-          <h1>Coming Soon</h1>
-          <p>Nervous Yak's blog is all about coding with Ruby, Rails, C# and other languages. We also love to yak about web design (visual and technical).</p>
+			<h2><%=article.title%></h2>
+			<em>By <%=article.author_name %></em>
+			<p><%=article.content%></p>
       </div>
     </div>    
+	<% end %>
 </div>
