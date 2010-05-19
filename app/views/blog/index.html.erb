@@ -1,18 +1,25 @@
 <div id="content_start" class="grid_14 prefix_1">
     <% @articles.each do |article| %>
-    <div id="blog" class="grid_8 alpha">
-      <div class="date grid_2 alpha">
+	<div id="blog" class="grid_8 alpha">
+		<div class="date grid_2 alpha">
+
+			<div class="grid_1 day">
 			
-        <div class="grid_1 day"></div>
-        <div class="month">
-			<p><%= article.created_at.to_s %></p>
+			</div>
+			<div class="month">
+				<p><%= article.created_at.to_s %></p>
+			</div>
 		</div>
-      </div>
-      <div class="text grid_6 omega">
+		<div class="text grid_6 omega">
 			<h2><%=link_to article.title, entry_path(article.id)%></h2>
 			<em>By <%=article.author_name %></em>
-			<p><%=article.content%></p>
-      </div>
-    </div>    
+			<p><%=textilize(coderay( article.content))%></p>
+		</div>
+		<div class="prefix_6 grid_2">
+		<% if can? :update, article %>
+		    <%= link_to "Update Article", edit_article_path(article) %>
+		<% end %>		
+		</div>
+	</div>    
 	<% end %>
 </div>
