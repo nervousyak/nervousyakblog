@@ -51,6 +51,9 @@
 				<p>
 				<%if user_signed_in? %>
 					 <%= link_to "Log Out", destroy_user_session_path%>
+				
+					    <%= link_to "Articles", articles_path%>
+					
 				<%else %>
 					<%= link_to "log in", new_user_session_path %>
 				<%end %>
