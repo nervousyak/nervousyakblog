@@ -1,4 +1,3 @@
 devise --version 1.0.7
 cancan
 coderay
-RedCloth
